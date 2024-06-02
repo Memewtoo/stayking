@@ -15,7 +15,7 @@ export const Footer: FC = () => {
                     />
                 </Link>
                 <a
-                    href="https://github.com/solana-labs"
+                    href="https://github.com/Memewtoo/stayking"
                     className="ml-4 mt-3 w-9 h-9 border-white text-secondary hover:text-white leading-normal hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                     target="_blank"
                     rel="noopener noreferrer"
