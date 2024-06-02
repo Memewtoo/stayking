@@ -36,17 +36,6 @@ export const Stay_King: FC = () => {
         return provider;
     }
 
-    async function getNumberDecimals(
-        mintAddress: PublicKey,
-        connection: Connection
-      ): Promise<number> {
-        const info = await connection.getParsedAccountInfo(mintAddress);
-        const decimals = (info.value?.data as ParsedAccountData).parsed.info
-          .decimals as number;
-    
-        return decimals;
-    }
-
     const program = useMemo(() => {
         if(connection) {
             return new Program(idl_object, programID, getProvider());
@@ -71,11 +60,11 @@ export const Stay_King: FC = () => {
     }
 
     // State variables for PDA's so we can use them in different instructions whenever
-    const [kingVault, setKingVault] = useState<PublicKey>();
-    const [kingVaultAuth, setKingVaultAuth] = useState<PublicKey>();
-    const [stakeInfo, setStakeInfo] = useState<PublicKey>();
-    const [stake_King, setStake_King] = useState<PublicKey>();
-    const [userATA, setUserAta] = useState<PublicKey>();
+    const [kingVault, setKingVault] = useState<PublicKey | null>(null);
+    const [kingVaultAuth, setKingVaultAuth] = useState<PublicKey | null>(null);
+    const [stakeInfo, setStakeInfo] = useState<PublicKey | null>(null);
+    const [stake_King, setStake_King] = useState<PublicKey | null>(null);
+    const [userATA, setUserAta] = useState<PublicKey | null>(null);
     
     /** Hardcoded Public Address for the SPL Tokens */
     const kingMint = new PublicKey(
