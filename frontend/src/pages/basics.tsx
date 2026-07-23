@@ -6,10 +6,10 @@ const Basics: NextPage = (props) => {
   return (
     <div>
       <Head>
-        <title>StayKing</title>
+        <title>Staking Dashboard | StayKing</title>
         <meta
           name="description"
-          content="StayKing"
+          content="Claim, stake, and unstake demo KING tokens on Solana Devnet."
         />
       </Head>
       <BasicsView />

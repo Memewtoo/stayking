@@ -9,7 +9,7 @@ const Home: NextPage = (props) => {
         <title>StayKing</title>
         <meta
           name="description"
-          content="Solana Scaffold Airdrop SOL"
+          content="Learn a simplified KING token staking cycle on Solana Devnet."
         />
       </Head>
       <HomeView />

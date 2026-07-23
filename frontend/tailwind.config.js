@@ -3,7 +3,27 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "media",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "sk-bg": "#0c1322",
+        "sk-deep": "#070e1d",
+        "sk-card": "#151b2b",
+        "sk-card-high": "#1c2435",
+        "sk-border": "#334155",
+        "sk-text": "#dce2f8",
+        "sk-secondary": "#aeb9cc",
+        "sk-muted": "#94a3b8",
+        "sk-green": "#4edea3",
+        "sk-green-strong": "#10b981",
+        "sk-amber": "#ffb95f",
+        "sk-violet": "#a5a6ff",
+        "sk-error": "#ffb4ab",
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        display: ["Space Grotesk", "sans-serif"],
+      },
+    },
   },
   plugins: [
     require('daisyui'),
